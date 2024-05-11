@@ -58,7 +58,13 @@ $(document).ready(function() {
         .then(data => {
             console.log('Data:', data);
             $('#display-area').text(JSON.stringify(data));
-            alert(data.message);
+            //alert(data.message);
+            Swal.fire({
+                title:'Success',    
+                icon:'success',
+                text:data.message
+
+            })
             populateEmail();
         })
         .catch(error => {
@@ -292,6 +298,11 @@ $(document).ready(function() {
             console.log("response from server",data);
             populateEmail();
             alert("Participant deleted successfully");
+            Swal.fire({
+                icon: 'success',
+                text: 'Participant deleted successfully'
+
+            })
         })
         .catch(error=> {
             console.error('Error:', error);
@@ -390,6 +401,10 @@ $(document).ready(function() {
 
         if ($(this).hasClass('disabled')) {
             alert('Update is disabled.');
+            Swal.fire({
+                icon: 'error',
+                text: 'Update is disabled.'
+            })
             return; // Stop here if button is disabled
         }
 
@@ -432,12 +447,20 @@ $(document).ready(function() {
         })
         .then(data => {
             console.log('Participant updated successfully:', data);
-            alert('Participant updated successfully!');
+            //alert('Participant updated successfully!');
+            Swal.fire({
+                icon: 'success',
+                text: 'Participant updated successfully!'
+            });
             $('#update-button').addClass('disabled');
         })
         .catch(error => {
             console.error('Error:', error);
-            alert('Error updating participant: ' + error.message);
+            //alert('Error updating participant: ' + error.message);
+            Swal.fire({
+                icon: 'error',
+                text: 'Error updating participant: ' + error.message
+            });
         });
     });
 });
