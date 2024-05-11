@@ -4,12 +4,13 @@
     <title><%= title %></title>
     <%- include('partials/header.ejs') %>
   </head>
-  <body>
+  <body style="background-color: rgb(199, 199, 199)">
     <%- include('partials/navbar.ejs') %>
     <div class="container-fluid mt-5"  name="index-main" id="index-main">
-      <h1><%= title %></h1>
+      <h1><%= title %></h1><hr>
       <p>Welcome to <%= title %></p>
-      <p> It was left blank to add authentication method for further development </p>
+      <p> This version of the application has a user interface </p>
+      <p> Data is stored in a file</p>
       <!--a href="/participants/index">Go to Application</a><br-->
       <a href="#" onclick="goToApplication()"> Proceed to Application</a>"<br>
       <a href="/auth/login">Login</a>
