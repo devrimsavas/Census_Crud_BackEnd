@@ -9,9 +9,9 @@ $(document).ready(function() {
         var $formGroup = $('#database-entry-form-group');
         $formGroup.slideToggle('slow', function() {
             if ($formGroup.is(':visible')) {
-                $('#register-operation').text('HIDE REGISTER FORM FORM');
+                $('#register-operation').text('HIDE REGISTER FORM ');
             } else {
-                $('#register-operation').text('ADD DELETE UPDATE ENTRY');
+                $('#register-operation').text('SHOW REGISTER FORM');
             }
         });
     }); //end slide toggle

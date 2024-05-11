@@ -27,7 +27,16 @@
           if (response.ok) {
             window.location.href='/participants/index';
           } else {
-            response.json().then(data=> alert(data.message));
+            response.json().then(data=> 
+            //alert(data.message)
+            Swal.fire({
+                title:'Error',    
+                icon:'error',
+                text:`${data.message}\n "Please go to Login Page`
+            })
+            
+          
+          );
           }
         }) 
         .catch(error=> console.error('Error:', error));

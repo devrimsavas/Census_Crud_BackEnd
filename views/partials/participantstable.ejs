@@ -5,10 +5,11 @@
         <!--Database entry form-->  
         <!--Database entry form-->  
         <div class="col-md-5 bordered rounded" name="database-form" id="database-form">
-            <p style="background-color: blanchedalmond;" id="register-operation"> <strong> ADD DELETE UPDATE ENTRY</strong></p><hr>
-            <div class="form-group" id="database-entry-form-group" name="database-entry-form-group">
+            <!--p  id="register-operation"> <strong> REGISTER UPDATE FORM </strong></p><hr-->
+            <button type="button" class="btn btn-primary slide-button" id="register-operation" name="register-operation">HIDE REGISTER FORM </button>
+            <div class="form-group border" id="database-entry-form-group" name="database-entry-form-group">
                 
-                <form class="form border" action="/dynamodb/newentry" method="POST" name="database-entry" id="database-entry">
+                <form class="form" action="/dynamodb/newentry" method="POST" name="database-entry" id="database-entry1">
                 
                 <!-- Personal Information Section -->
                 <fieldset>
@@ -69,10 +70,11 @@
 
         <!--Database table--> 
         <div class="col-md-7 border rounded" name="database-table" id="database-table-menu"> 
-            <p style="background-color: blanchedalmond;" > GET ALL DATA </p><hr>
+            <p style="background-color: blanchedalmond;" > PERSON DATA </p><hr>
+            
             <div class="button-group bg-light  ">
                 <div class="row">
-                    <div class="col-md-11">
+                    <div class="col-md-12">
 
                 
                         <button type="button " class="btn btn-primary  " id="list-of-all" name="list-of-all"> ALL</button>
@@ -83,15 +85,7 @@
                         <button type="button" class="btn btn-danger " id="delete-button" name="delete-button">DELETE A USER</button>
 
                     </div>
-                    <div class="col-md-1">
-
-                        
-
-
-                        
-                    </div>
-
-
+                    
                 </div>
                 
 
@@ -103,7 +97,7 @@
             </div>
 
             <div class="d-flex flex-row mt-2 mb-2 " id="display2" name="display2" >
-                <label for="email-input" class="form-label"> Person Email</label>
+                
                 <select id="email-input" name="email-input" class="form-select" style="font-weight: bold;">
                     <option value="" >Select email</option>
                     <!--add people dynamically-->

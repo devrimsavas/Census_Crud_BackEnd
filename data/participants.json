@@ -70,7 +70,7 @@
   {
     "email": "ahmetci@gmail.com",
     "personalInfo": {
-      "firstname": "Ahmet",
+      "firstname": "Ahmet Nasir ziya",
       "lastname": "Selimci",
       "dob": "2024/05/22"
     },
@@ -99,23 +99,6 @@
     "home": {
       "country": "Afghanistan",
       "city": "kabul"
-    }
-  },
-  {
-    "email": "on@test.com",
-    "personalInfo": {
-      "firstname": "aewf",
-      "lastname": "wd",
-      "dob": "2024/05/15"
-    },
-    "work": {
-      "companyname": "awef",
-      "salary": 222,
-      "currency": "USD"
-    },
-    "home": {
-      "country": "Afghanistan",
-      "city": "fe"
     }
   },
   {
